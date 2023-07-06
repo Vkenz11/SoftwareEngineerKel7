@@ -18,6 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&family=Poppins:wght@200;700&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #487D70;">
+
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="BiBookMainPage.html"><img src="./picture/bibooklogo.png" alt=""></a>
+            </div>
+            
+        </nav>
+    </section>
+
     <div class="mainpage">
         <section class="mainpage-container1">
             <img src="./picture/mainpage1.png">
@@ -39,7 +49,12 @@
         </section>
 
         <section class="mainpage-container3">
-            <img src="./picture/mainpage2.png">
+            <div class="mainpage-container3-hover">
+                <input type="image" src="./picture/mainpage2.png">
+            </div>
+            <button onclick="window.location='./BookingPage.html'">
+                Pesan Sekarang
+            </button>
         </section>
 
         <section class="mainpage-container4">
@@ -85,6 +100,28 @@
         </section>
     </div>
 </body>
+
+<div class="hide" id="hide"></div>
+<div class="header-toggle"onclick="toggleMenu(this); toggleBar(this); dark(this)">
+    <div class="bar1" ></div>
+    <div class="bar2"></div>
+    <div class="bar3" ></div>
+</div>  
+<nav class="nav_menu" id="nmenu">
+    <nav class="nav_content">
+        <div class="navi">
+            <ul class="nav_list">
+                <li class="nav-item">Beranda</li>
+                <li class="nav-item">Pinjam Ruangan</li>
+                <li class="nav-item">Riwayat Pinjaman</li>
+                <li class="nav-item">Akun</li>
+            </ul>
+        </div>
+        
+    </nav>
+</nav>
+
 <script src="mySlides.js"></script>
+<script src="headerMenu.js"></script>
 <script src="https://kit.fontawesome.com/457a315592.js" crossorigin="anonymous"></script>
 </html>
